@@ -211,16 +211,13 @@ function initContactForm() {
 
 function initMobileMenu() {
   const toggle = document.getElementById("menuToggle");
-  const nav = document.querySelector(".nav-links");
-
-  if (!toggle) return;
+  const nav = document.querySelector(".nav-menu");
 
   toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
   });
 
-  /* CLOSE MENU WHEN LINK CLICKED */
-  document.querySelectorAll(".nav-links a").forEach((link) => {
+  document.querySelectorAll(".nav-menu a").forEach((link) => {
     link.addEventListener("click", () => {
       nav.classList.remove("active");
     });
