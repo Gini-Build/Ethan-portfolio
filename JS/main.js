@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initFadeAnimations();
   initNavbarScroll();
   initProjects();
-  initContactForm();
+  //initContactForm();
+  initMobileMenu();
 });
 
 /* -----------------------------
@@ -205,5 +206,23 @@ function initContactForm() {
     alert("Message sent successfully!");
 
     form.reset();
+  });
+}
+
+function initMobileMenu() {
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.querySelector(".nav-links");
+
+  if (!toggle) return;
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  /* CLOSE MENU WHEN LINK CLICKED */
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
   });
 }
