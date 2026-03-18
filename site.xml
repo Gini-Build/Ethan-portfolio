@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://gini.digital/</loc>
+<priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/#about</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/#skills</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/#projects</loc>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/#contact</loc>
+<priority>0.7</priority>
+</url>
+
+</urlset>
