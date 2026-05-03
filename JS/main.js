@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   startLoader();
-  initParticles();
   initSkills();
   initExperience();
   initFadeAnimations();
@@ -33,45 +32,6 @@ function startLoader() {
       }, 300);
     }
   }, 80);
-}
-
-/* -----------------------------
-PARTICLES
------------------------------*/
-
-function initParticles() {
-  const container = document.getElementById("particles");
-  if (!container) return;
-
-  const symbols = [
-    "{",
-    "}",
-    "<",
-    ">",
-    "=",
-    "+",
-    "-",
-    "/",
-    "&&",
-    "||",
-    "=>",
-    "()",
-    "[]",
-    "<>",
-  ];
-
-  for (let i = 0; i < 40; i++) {
-    const el = document.createElement("div");
-
-    el.className = "particle";
-
-    el.innerText = symbols[Math.floor(Math.random() * symbols.length)];
-
-    el.style.left = Math.random() * 100 + "%";
-    el.style.top = Math.random() * 100 + "%";
-
-    container.appendChild(el);
-  }
 }
 
 /* -----------------------------
