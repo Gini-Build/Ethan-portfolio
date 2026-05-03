@@ -934,8 +934,12 @@ body {
 @media (max-width: 768px) {
   /* Hero section */
 
+  .hero-video {
+    object-position: center center;
+  }
+
   .hero-overlay {
-    background: rgba(10, 15, 28, 0.75);
+    background: rgba(10, 15, 28, 0.48);
   }
 
   .hero-container {
@@ -955,12 +959,16 @@ body {
     justify-content: center;
 
     flex-wrap: wrap;
+
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
   }
 
   .hero-description {
     font-size: 16px;
 
     padding: 0 10px;
+
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
   }
 
   .hero-buttons {
