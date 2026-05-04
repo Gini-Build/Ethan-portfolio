@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   startLoader();
+  initHeroVideo();
   initSkills();
   initExperience();
   initFadeAnimations();
@@ -32,6 +33,22 @@ function startLoader() {
       }, 300);
     }
   }, 80);
+}
+
+/* -----------------------------
+HERO VIDEO
+-----------------------------*/
+
+function initHeroVideo() {
+  const video = document.querySelector(".hero-video");
+  if (!video) return;
+
+  video.src =
+    window.innerWidth <= 768
+      ? "images/Hero-Video-Mobile.mp4"
+      : "images/Hero-Video.mp4";
+
+  video.load();
 }
 
 /* -----------------------------

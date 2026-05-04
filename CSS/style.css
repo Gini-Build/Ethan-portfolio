@@ -934,10 +934,6 @@ body {
 @media (max-width: 768px) {
   /* Hero section */
 
-  .hero-video {
-    object-position: center center;
-  }
-
   .hero-overlay {
     background: rgba(10, 15, 28, 0.48);
   }
