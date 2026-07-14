@@ -8,22 +8,27 @@
 </url>
 
 <url>
-<loc>https://gini.digital/#about</loc>
+<loc>https://gini.digital/free-audit/</loc>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/services/</loc>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://gini.digital/work/</loc>
 <priority>0.8</priority>
 </url>
 
 <url>
-<loc>https://gini.digital/#skills</loc>
-<priority>0.8</priority>
+<loc>https://gini.digital/about/</loc>
+<priority>0.7</priority>
 </url>
 
 <url>
-<loc>https://gini.digital/#projects</loc>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://gini.digital/#contact</loc>
+<loc>https://gini.digital/contact/</loc>
 <priority>0.7</priority>
 </url>
 

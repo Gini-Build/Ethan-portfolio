@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   startLoader();
   initHeroVideo();
-  initSkills();
   initExperience();
   initFadeAnimations();
   initNavbarScroll();
   initProjects();
-  //initContactForm();
   initMobileMenu();
 });
 
@@ -45,52 +43,10 @@ function initHeroVideo() {
 
   video.src =
     window.innerWidth <= 768
-      ? "images/Hero-Video-Mobile.mp4"
-      : "images/Hero-Video.mp4";
+      ? "/images/Hero-Video-Mobile.mp4"
+      : "/images/Hero-Video.mp4";
 
   video.load();
-}
-
-/* -----------------------------
-SKILLS ANIMATION
------------------------------*/
-
-function initSkills() {
-  const skills = document.querySelectorAll(".skill-item");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const item = entry.target;
-
-          const progress = item.querySelector(".skill-progress");
-          const percentEl = item.querySelector(".skill-percent");
-
-          const percent = item.getAttribute("data-percent");
-
-          progress.style.width = percent + "%";
-
-          let count = 0;
-
-          const counter = setInterval(() => {
-            count++;
-
-            if (percentEl) percentEl.textContent = count + "%";
-
-            if (count >= percent) {
-              clearInterval(counter);
-            }
-          }, 15);
-
-          observer.unobserve(item);
-        }
-      });
-    },
-    { threshold: 0.3 },
-  );
-
-  skills.forEach((skill) => observer.observe(skill));
 }
 
 /* -----------------------------
@@ -170,20 +126,6 @@ function initFadeAnimations() {
   );
 
   elements.forEach((el) => observer.observe(el));
-}
-
-function initContactForm() {
-  const form = document.getElementById("contactForm");
-
-  if (!form) return;
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    alert("Message sent successfully!");
-
-    form.reset();
-  });
 }
 
 function initMobileMenu() {
