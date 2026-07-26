@@ -1204,6 +1204,10 @@ body {
   max-width: 700px;
 }
 
+.page-hero p a {
+  color: var(--primary);
+}
+
 @media (max-width: 768px) {
   .page-hero {
     padding: 140px 20px 40px;
