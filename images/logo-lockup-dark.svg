@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 110">
-  <rect x="0" y="5" width="100" height="100" rx="22" fill="#35C2FF"></rect>
-  <text x="48" y="61" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="62" fill="#0A0F1C" text-anchor="middle" dominant-baseline="middle">G</text>
-  <circle cx="77.5" cy="82.5" r="7.5" fill="#0A0F1C"></circle>
-  <text x="128" y="63" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" fill="#F5F8FC" dominant-baseline="middle">Gini<tspan fill="#35C2FF" font-weight="400"> Digital</tspan></text>
+  <rect x="0" y="5" width="100" height="100" rx="22" fill="#2563EB"></rect>
+  <text x="48" y="61" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="62" fill="#0B1220" text-anchor="middle" dominant-baseline="middle">G</text>
+  <circle cx="77.5" cy="82.5" r="7.5" fill="#22D3EE"></circle>
+  <text x="128" y="63" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="46" fill="#F5F8FC" dominant-baseline="middle">Gini<tspan fill="#2563EB" font-weight="400"> Digital</tspan></text>
 </svg>
